@@ -316,13 +316,14 @@ body,
 
 
 .sub-heading {
-	font-weight: 700;
 	color: var(--color-primary);
+	font-family: 'Bahij_SemiBold';
 }
 
 .heading {
 	font-family: 'Bahij_SemiBold';
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+	font-size: 33px;
 }
 
 .collaboration-style-one .desc {
@@ -450,17 +451,18 @@ header .contact-us {
 	-webkit-text-fill-color: transparent;
 }
 
-.feature-style-five .item h4 {
-	font-weight: 700;
-}
+.feature-style-five .item h4 {font-family: 'Bahij_SemiBold';}
 
 .feature-style-five .item p {
 	margin-bottom: -5px;
 }
 
-.feature-style-five>h4 {
+.feature-style-five>span {
 	font-weight: 700;
 	color: var(--color-primary);
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: block;
 }
 
 .feature-style-five h2 {
@@ -504,7 +506,7 @@ header .contact-us {
 	font-size: 40px;
 }
 
-.contact-area .content .contact-ul li h5 {
+.contact-area .content .contact-ul li p {
 	font-family: 'Bahij_SemiBold';
 	margin-bottom: 5px;
 	font-size: 17px;
@@ -594,7 +596,8 @@ header .contact-us {
 .title-contact p {
 	font-size: 21px;
 	display: block;
-	color: var(--color-primary)
+	color: var(--color-primary);
+	font-family: 'Bahij_SemiBold';
 }
 
 .title-contact h3 {
