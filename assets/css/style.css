@@ -504,12 +504,14 @@ header .contact-us {
 
 .contact-area .content .contact-ul li i {
 	font-size: 40px;
+	color: #474d60;
 }
 
 .contact-area .content .contact-ul li p {
 	font-family: 'Bahij_SemiBold';
 	margin-bottom: 5px;
 	font-size: 17px;
+	color: var(--color-heading);
 }
 
 .contact-area .content .contact-ul li a {
@@ -596,7 +598,7 @@ header .contact-us {
 .title-contact p {
 	font-size: 21px;
 	display: block;
-	color: var(--color-primary);
+    color: var(--color-paragraph);
 	font-family: 'Bahij_SemiBold';
 }
 
@@ -619,7 +621,7 @@ header .contact-us {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--color-paragraph);
+	color: #474d60;
 	transition: .2s;
 }
 
@@ -635,6 +637,7 @@ footer {
 
 footer p {
 	margin-bottom: 0;
+	color: #474d60;
 }
 
 header.fixed-header {
