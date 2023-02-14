@@ -19,7 +19,6 @@
 	font-display: swap;
 }
 
-
 * {
 	padding: 0;
 	margin: 0;
@@ -197,11 +196,11 @@ strong {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	background: #c36005;
 	background: linear-gradient(45deg, #e5a163 0%, #c36005 50%);
 	height: 100vh;
 }
 
-body,
 .banner-area,
 .banner-area div {
 	height: 100%;
@@ -373,8 +372,10 @@ header .contact-us {
 	font-weight: normal;
 	font-size: 17px;
 	background: #fff;
-	padding: 10px 25px;
+	padding: 6px 25px;
 	border-radius: 50px;
+	border: 2px solid transparent;
+	transition: unset;
 }
 
 .align-center {
@@ -387,11 +388,12 @@ header .contact-us {
 
 .banner-area h2 {
 	font-size: 45px;
-	font-weight: 800;
-	margin-bottom: 25px;
+	font-weight: normal;
+	margin-bottom: 20px;
 	line-height: 1.4;
 	color: #fff;
 	margin-top: -50px;
+	font-family: 'Bahij_SemiBold';
 }
 
 .banner-area .desc-banner {
@@ -444,14 +446,16 @@ header .contact-us {
 	font-size: 50px;
 	font-weight: 100;
 	margin-bottom: 30px;
-	background: linear-gradient(90deg, #e5a163 0%, #c36005 100%);
+	background: linear-gradient(90deg, #e5a163 0%, var(--color-primary) 100%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.feature-style-five .item h4 {font-family: 'Bahij_SemiBold';}
+.feature-style-five .item h4 {
+	font-family: 'Bahij_SemiBold';
+}
 
 .feature-style-five .item p {
 	margin-bottom: -5px;
@@ -556,8 +560,8 @@ header .contact-us {
 }
 
 .contact-content form button {
-	padding: 8px 30px;
-	font-size: 16px;
+	padding: 7px 25px;
+	font-size: 17px;
 	border: 2px solid var(--color-primary) !important;
 	overflow: hidden;
 	position: relative;
@@ -598,7 +602,7 @@ header .contact-us {
 .title-contact p {
 	font-size: 21px;
 	display: block;
-    color: var(--color-paragraph);
+	color: var(--color-paragraph);
 	font-family: 'Bahij_SemiBold';
 }
 
@@ -626,7 +630,7 @@ header .contact-us {
 }
 
 .social-icon a:hover {
-	color: #ff7a00;
+	color: var(--color-primary);
 }
 
 footer {
@@ -643,6 +647,20 @@ footer p {
 header.fixed-header {
 	background: #fff;
 	box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
+	-webkit-animation: smooth-header .4s linear;
+	animation: smooth-header .4s linear;
+}
+
+@keyframes smooth-header {
+	0% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%)
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
 }
 
 header.fixed-header .navbar-nav .nav-link {
@@ -650,10 +668,56 @@ header.fixed-header .navbar-nav .nav-link {
 }
 
 header.fixed-header .contact-us {
-	background: #ff7a00;
 	color: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	border: 2px solid var(--color-primary);
+	transition: .3s;
+}
+
+header.fixed-header .contact-us:hover {
+	color: var(--color-heading);
+	background: #fff;
+}
+
+header.fixed-header .contact-us::after {
+	position: absolute;
+	right: -10px;
+	top: 0;
+	content: "";
+	height: 100%;
+	width: 120%;
+	background: var(--color-primary);
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+	border-radius: 30px;
+}
+
+header.fixed-header .contact-us:hover::after {
+	width: 0;
 }
 
 header.fixed-header .navbar-brand img {
 	height: 60px;
+}
+
+.title-page {
+	font-weight: normal;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 26px;
+}
+
+.bg-header {
+	background: #c36005;
+	background: linear-gradient(45deg, var(--color-primary) 0%, #c36005 50%);
+	height: 96px;
+}
+
+.page-sec {
+	padding: 35px 0;
+	min-height: calc(100vh - 162px);
 }
