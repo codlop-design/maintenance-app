@@ -1,15 +1,16 @@
 
 (function($) {
     "use strict";
-
-    $(window).scroll(function(){
-        if ($(window).scrollTop() > 0) {
-            $('header').addClass('fixed-header');
-        }
-        else {
-            $('header').removeClass('fixed-header');
-        }
-    });
+    if ($(window).width() > 768) {
+        $(window).scroll(function(){
+            if ($(window).scrollTop() > 0) {
+                $('header').addClass('fixed-header');
+            }
+            else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    }
 
     $(document).ready(function() {
         var wow = new WOW({
