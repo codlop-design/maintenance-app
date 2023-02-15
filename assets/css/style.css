@@ -719,6 +719,10 @@ header.fixed-header .navbar-brand img {
 	min-height: calc(100vh - 162px);
 }
 
+.collaborationa-area.apps .row:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
 /* responsive */
 @media (max-width:1200px) {
 	.container {
@@ -801,6 +805,42 @@ header.fixed-header .navbar-brand img {
 
 	.pr-50 {
 		padding-right: 30px;
+	}
+
+	.title-contact p {
+		font-size: 19px;
+		margin-bottom: 10px;
+	}
+
+	.title-contact h3,
+	.contact-form-box h2 {
+		font-size: 24px;
+	}
+
+	.contact-content .form-box {
+		padding-right: 0;
+	}
+
+	.contact-area .content .contact-ul li i {
+		font-size: 34px;
+	}
+
+	footer {
+		padding: 15px 0;
+	}
+
+	.contact-content form button {
+		padding: 6px 25px;
+		font-size: 16px;
+	}
+
+	.bg-header {
+		height: 91px;
+	}
+
+	.title-page {
+		margin-bottom: 20px;
+		font-size: 24px;
 	}
 }
 
@@ -896,10 +936,6 @@ header.fixed-header .navbar-brand img {
 		padding-bottom: 40px;
 	}
 
-	.collaboration-style-one:first-of-type {
-		margin-bottom: 20px;
-	}
-
 	.feature-style-five-grid {
 		margin-top: 25px;
 		gap: 15px;
@@ -926,6 +962,49 @@ header.fixed-header .navbar-brand img {
 
 	.pr-50 {
 		padding-right: calc(var(--bs-gutter-x) * .5);
+	}
+
+	.title-contact p {
+		font-size: 17px;
+	}
+
+	.title-contact h3, .contact-form-box h2 {
+		font-size: 22px;
+	}
+
+	.title-contact {
+		margin-bottom: 22px;
+	}
+
+	.contact-area .content .contact-ul li i {
+		font-size: 32px;
+	}
+
+	.contact-area .content .contact-ul li {
+		gap: 15px;
+	}
+
+	.social-icon a {
+		font-size: 24px;
+	}
+
+	.contact-content form input, .contact-content form textarea {
+		padding: 6px 12px;
+		font-size: 15px;
+	}
+
+	.contact-form-box .form-group {
+		margin-bottom: 10px;
+	}
+
+	.contact-form-box h2 {
+		margin-bottom: 15px;
+	}
+
+	.contact-content form button {
+		padding: 4px 20px;
+		font-size: 16px;
+		margin-top: 5px;
 	}
 }
 
@@ -985,6 +1064,78 @@ header.fixed-header .navbar-brand img {
 	.feature-style-five-area {
 		padding-bottom: 175px !important;
 		margin-bottom: -80px;
+	}
+
+	.collaborationa-area .row {
+		gap: 20px;
+	}
+
+	.collaborationa-area.apps .row {
+		flex-direction: column-reverse !important;
+	}
+
+	.title-contact h3, .contact-form-box h2 {
+		font-size: 20px;
+	}
+
+	.title-contact {
+		margin-bottom: 20px;
+	}
+
+	.contact-area .content .contact-ul {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		row-gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	.contact-area .content .contact-ul li {
+		margin-top: 0;
+		gap: 10px;
+	}
+
+	.social-icon {
+		margin-top: 20px;
+	}
+
+	.contact-area .content .contact-ul li p {
+		margin-bottom: 0;
+		font-size: 16px;
+	}
+
+	.social-icon ul {
+		gap: 15px;
+	}
+
+	.social-icon a {
+		font-size: 22px;
+	}
+
+	.contact-form-box {
+		margin-top: 30px;
+	}
+
+	.contact-area .content .contact-ul li a {
+		font-size: 16px;
+	}
+
+	.contact-content form button {
+		padding: 2px 20px;
+		font-size: 15px;
+	}
+
+	.page-sec {
+		padding: 25px 0;
+	}
+
+	.bg-header {
+		height: 81px;
+	}
+
+	.title-page {
+		margin-bottom: 18px;
+		font-size: 22px;
 	}
 	
 }
@@ -1064,6 +1215,69 @@ header.fixed-header .navbar-brand img {
 		margin-bottom: -55px;
 	}
 
+	.title-contact p {
+		font-size: 16px;
+		margin-bottom: 7px;
+	}
+
+	.title-contact h3, .contact-form-box h2 {
+		font-size: 18px;
+	}
+
+	.title-contact {
+		margin-bottom: 0;
+	}
+
+	.contact-area .content .contact-ul li i {
+		font-size: 29px;
+	}
+
+	.contact-area .content .contact-ul li p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.contact-area .content .contact-ul li a {
+		font-size: 15px;
+	}
+
+	.social-icon a {
+		font-size: 20px;
+	}
+
+	.contact-form-box {
+		margin-top: 25px;
+	}
+
+	.contact-content form button {
+		padding: 2px 15px;
+		margin-top: 3px;
+	}
+
+	.contact-content form input, .contact-content form textarea {
+		padding: 5px 12px;
+		font-size: 14px;
+	}
+
+	footer {
+		padding: 10px 0;
+		font-size: 15px;
+	}
+
+	.contact-area .content .contact-ul {
+		gap: 30px;
+		row-gap: 10px;
+	}
+
+	.bg-header {
+		height: 71px;
+	}
+
+	.title-page {
+		margin-bottom: 16px;
+		font-size: 20px;
+	}
+
 }
 
 @media (max-width:450px) {
@@ -1135,5 +1349,44 @@ header.fixed-header .navbar-brand img {
 
 	.feature-style-five-area {
 		padding-bottom: 110px !important;
+	}
+
+	.contact-content form button {
+		padding: 0px 10px;
+		font-size: 14px;
+	}
+
+	.contact-area {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.title-contact h3, .contact-form-box h2 {
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+
+	footer {
+		padding: 8px 0;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.title-contact p {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	.page-sec {
+		padding: 20px 0;
+	}
+
+	.bg-header {
+		height: 66px;
+	}
+
+	.title-page {
+		margin-bottom: 15px;
+		font-size: 19px;
 	}
 }
